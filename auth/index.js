@@ -1,7 +1,9 @@
 'use strict';
 
-const ensureAuthenticated = function (req, res, next) {
-  if (req.isAuthenticated()) { return next(); }
+const ensureAuthenticated = function(req, res, next) {
+  if (req.isAuthenticated()) {
+    return next();
+  }
 
   req.session.returnTo = req.path;
   res.redirect('/login');
