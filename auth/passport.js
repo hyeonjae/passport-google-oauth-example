@@ -23,8 +23,7 @@ passport.use(new GoogleStrategy({
   clientID: GOOGLE_CLIENT_ID,
   clientSecret: GOOGLE_CLIENT_SECRET,
   callbackURL: "/auth/google/callback",   // google api console에 등록되어 있어야 한다.
-},
-  function (accessToken, refreshToken, profile, done) {
+}, function (accessToken, refreshToken, profile, done) {
     console.log('accessToken:', accessToken);
     console.log('refreshToken:', refreshToken);
 

@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Login'});
+  res.render('login', { title: 'Login' });
 });
 
 router.get('/welcome', auth.ensureAuthenticated, function(req, res, next) {
