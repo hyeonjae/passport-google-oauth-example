@@ -10,6 +10,16 @@
 
 ## 실행방법
 
+`auth/config.json` 파일을 다음과 같이 만들고, [이곳](https://console.developers.google.com)에서 만든 id와 secret을 설정한다.
+```json
+{
+  "google": {
+    "clientId": "",
+    "clientSecret": ""
+  }
+}
+```
+
 ```bash
 $ npm install
 $ PORT=3000 npm run start
